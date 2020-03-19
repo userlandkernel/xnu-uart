@@ -4,12 +4,11 @@
  * Taken from XNU pe_serial.c
 */
 
-// UART register offsets
+typedef uint8_t uart_reg_t;
 
 #ifndef USE_SAMSUNG_UART
 
-typedef uint8_t uart_reg_t;
-
+  // UART register offsets
   #define rULCON    0x00    // UART Line control
   #define rUCON     0x04    // UART Control
   #define rUFCON    0x08    // UART FIFO control
