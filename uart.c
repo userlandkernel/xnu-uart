@@ -16,7 +16,7 @@ int uart_get_reg(uart_reg_t reg) {
 
 void uart_set_reg(uart_reg_t reg, int value) {
   if(reg == rUTXH) {
-    WriteAnywhere32(UART_SYMBOLS.UART_BASE_VIRT+rUTXH, (uint8_t)(value & 0xff));
+    WriteAnywhere8(UART_SYMBOLS.UART_BASE_VIRT+rUTXH, (uint8_t)(value & 0xff));
     return;
   }
   WriteAnywhere32(UART_SYMBOLS.UART_BASE_VIRT+reg, (uint8_t)(value & 0xff));
