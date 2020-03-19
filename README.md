@@ -1,4 +1,4 @@
-# xnu-uart
+# XNU UART Interfacing with task_for_pid(0)
 Feed me tfp0 and I give you UART.
 
 ## About
