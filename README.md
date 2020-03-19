@@ -9,7 +9,7 @@ Feed me tfp0 and I give you UART.
 
 ## Depends
 - uart physical base address (can be found in device tree)
-- gPEClockFrequencyInfo (a kernel structure offset), or the first 32-bits of the reg value (needed for sample_rate calculations)
+- gPEClockFrequencyInfo (a kernel structure offset needed for sample_rate calculations)
 
 ## How to find gPEClockFrequencyInfo structure
 - Find the string "memory-frequency"
